@@ -3,13 +3,13 @@ import PropTypes from 'prop-types'
 import { compose } from 'redux'
 import { connect } from 'react-redux'
 import { firebaseConnect, } from 'react-redux-firebase'
-// import GoogleButton from 'react-google-button' // optional
+import GoogleButton from 'react-google-button'
 
 export const LoginPage = ({ firebase, auth }) => (
   <div className="abc">
-    <button // <GoogleButton/> button can be used instead
+    <GoogleButton
       onClick={() => firebase.login({ provider: 'google', type: 'popup' })}
-    >Login With Google</button>
+    >Login With Google</GoogleButton>
     <div>
       <h2>Auth</h2>
      
