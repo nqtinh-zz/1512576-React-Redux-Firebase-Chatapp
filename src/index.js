@@ -10,7 +10,7 @@ import App from './App';
 
 const firebaseConfig = {
 	      apiKey: "AIzaSyAYwfD0_hfAXQtjogjTxzifoZTpZ6CFL_Q",
-        authDomain: "dagkchatapp-1512576.com",
+        authDomain: "dagkchatapp-1512576.firebaseapp.com",
         databaseURL: "https://dagkchatapp-1512576.firebaseio.com",
         projectId: "dagkchatapp-1512576",
         storageBucket: "dagkchatapp-1512576.appspot.com",
