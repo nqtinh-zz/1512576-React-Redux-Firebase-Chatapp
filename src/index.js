@@ -9,22 +9,24 @@ import App from './App';
 
 
 const firebaseConfig = {
-	      apiKey: "AIzaSyAYwfD0_hfAXQtjogjTxzifoZTpZ6CFL_Q",
-        authDomain: "dagkchatapp-1512576.firebaseapp.com",
-        databaseURL: "https://dagkchatapp-1512576.firebaseio.com",
-        projectId: "dagkchatapp-1512576",
-        storageBucket: "dagkchatapp-1512576.appspot.com",
-        messagingSenderId: "793915567008"
+  apiKey: "AIzaSyAYwfD0_hfAXQtjogjTxzifoZTpZ6CFL_Q",
+  authDomain: "dagkchatapp-1512576.firebaseapp.com",
+  databaseURL: "https://dagkchatapp-1512576.firebaseio.com",
+  projectId: "dagkchatapp-1512576",
+  storageBucket: "dagkchatapp-1512576.appspot.com",
+  messagingSenderId: "793915567008"
 }
 firebase.initializeApp(firebaseConfig)
 
 const rrfConfig = {
   userProfile: 'users',
-  enableLogging: false, 
+  enableLogging: false,
 }
 
+
+
 const createStoreWithFirebase = compose(
-  reactReduxFirebase(firebase, rrfConfig), 
+  reactReduxFirebase(firebase, rrfConfig),
 )(createStore)
 
 
@@ -36,8 +38,8 @@ const initialState = {}
 const store = createStoreWithFirebase(rootReducer, initialState)
 
 ReactDOM.render(
-	<Provider store = { store }>
-		<App />
-	</Provider>,
-    document.getElementById('root')
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  document.getElementById('root')
 );
