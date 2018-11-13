@@ -1,6 +1,6 @@
-import * as Status from '../action/actiontype';
+import * as Status from './actiontype';
 
-export const selectedFriendChating = (selectedFriend)=>{
+export const FriendChating = (selectedFriend)=>{
   return{
       type: Status.SELECT_FRIEND_CHAT,
       selectFriendChatting: selectedFriend,

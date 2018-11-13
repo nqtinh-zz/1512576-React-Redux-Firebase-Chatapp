@@ -1,10 +1,10 @@
+import './../css/bootstrap.css';
+import './../css/login.css';
 import React, { Component } from 'react'
 import firebase from 'firebase';
 import { compose } from 'redux';
 import { connect } from 'react-redux';
 import { firebaseConnect } from 'react-redux-firebase';
-import './../css/bootstrap.css';
-import './../css/login.css';
 import GoogleButton from 'react-google-button';
 class Login extends Component {
   constructor(props, context) {

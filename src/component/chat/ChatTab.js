@@ -1,26 +1,24 @@
-import React,{Component} from 'react';
-import  {connect} from 'react-redux'
+import React, { Component } from 'react';
+import { connect } from 'react-redux'
 import FriendChat from "./FriendChat";
-// import MessageItem from "./MessageItem";
-// import {compose} from 'redux';
 import ListMessage from "./ListMessage";
 import InputText from "./InputText";
 
-class ChatTab extends Component{
+class ChatTab extends Component {
     render() {
         return (
             <div className="chat">
-                <FriendChat/>
-                <ListMessage/>
-                <InputText/>
+                <FriendChat />
+                <ListMessage />
+                <InputText />
             </div>
         );
     }
 }
 
 
-var mapSateToProps = (state) =>{
-    return{
+var mapSateToProps = (state) => {
+    return {
         selectFriendChatting: state.selectFriendChatting,
     };
 };

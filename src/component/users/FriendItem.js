@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-import {selectedFriendChating} from './../../action/friendChatingAction'
+import {FriendChating} from './../../action/actionchating'
 import  {connect} from 'react-redux'
 
 class FriendItem extends Component {
@@ -19,7 +19,7 @@ class FriendItem extends Component {
                         {userData.displayName}
                     </div>
                     <div className="status">
-                        <i className={"fa fa-circle " + this.props.icon}/> {this.props.text}
+                        <i className={"fa fa-circle " + this.props.icon}/>Online{this.props.text}
                     </div>
                 </div>
             </li>
@@ -29,7 +29,7 @@ class FriendItem extends Component {
 
 var mapDispatchToProps =(dispatch)=>{
     return{
-        onSelectFriend: (selectedFriend)=>{dispatch(selectedFriendChating(selectedFriend));}
+        onSelectFriend: (selectedFriend)=>{dispatch(FriendChating(selectedFriend));}
     }
 };
 export default connect(null,mapDispatchToProps)(FriendItem);

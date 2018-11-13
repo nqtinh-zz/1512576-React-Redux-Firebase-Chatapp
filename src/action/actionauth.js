@@ -1,5 +1,5 @@
 
-import * as Status from './../action/actiontype';
+import * as Status from './actiontype';
 export const signIn = () =>{
     return(dispatch, getSate,{getFirebase})=>{
         const firebase = getFirebase();
